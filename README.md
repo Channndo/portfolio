@@ -19,6 +19,7 @@ Built as a dependency-free static site (`index.html`, `style.css`, `script.js`).
 
 **Sites & Insurance**
 - [Chandler Hill Agency](https://chandlerhillagency.com) — insurance agency site
+- [Alonso Contreras Agency](https://channndo.github.io/alonsocontrerasagency/) — insurance lead funnel
 
 ## Run locally
 

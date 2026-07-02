@@ -3,66 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chandler Hill — Builder Portfolio</title>
-  <meta name="description" content="Chandler Hill — founder and full-stack builder. A curated index of the platforms, security tools, games, and sites I've shipped." />
+  <title>Chandler Hill — Builder</title>
+  <meta name="description" content="Chandler Hill — founder of Omnistrata and full-stack builder. A live index of the AI platforms, security tools, games, and sites I've shipped to production." />
+  <meta property="og:title" content="Chandler Hill — Builder" />
+  <meta property="og:description" content="Founder of Omnistrata. AI platforms, security tooling, games, and production sites — all live." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
   <div class="bg-noise" aria-hidden="true"></div>
 
-  <main>
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="nav__logo" href="#top">
+      <span class="nav__mark">CH</span>
+      <span class="nav__logo-text">Chandler&nbsp;Hill</span>
+    </a>
+    <div class="nav__links">
+      <a href="#platforms">Platforms</a>
+      <a href="#games">Games</a>
+      <a href="#sites">Sites</a>
+    </div>
+    <div class="nav__side">
+      <span class="nav__status"><span class="dot"></span> Open to work</span>
+      <a class="nav__cta" href="mailto:chandler@syntrix.solutions">Contact</a>
+    </div>
+  </nav>
+
+  <main id="top">
     <!-- HERO -->
     <header class="hero">
-      <div class="hero__inner reveal">
-        <div class="hero__avatar">
-          <img src="assets/chandler.png" alt="Portrait of Chandler Hill" />
-          <span class="hero__avatar-ring" aria-hidden="true"></span>
-        </div>
-        <div class="hero__text">
-          <p class="eyebrow">Chandler Hill</p>
-          <h1 class="hero__title">I design and ship<br /><span class="grad">end-to-end products.</span></h1>
-          <p class="hero__lede">
-            Founder of <strong>Omnistrata</strong> — building AI-native platforms, security tooling,
-            games, and client sites from concept to production. Below is a live index of what I've put into the world.
+      <div class="hero__grid">
+        <div class="hero__left reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Founder · Omnistrata</p>
+          <h1 class="hero__title">Chandler Hill</h1>
+          <p class="hero__role">
+            I build <span class="grad">AI platforms, security tools, games &amp; sites</span> —
+            concept to production.
           </p>
-          <div class="hero__meta">
-            <span class="chip"><span class="dot"></span> 8 live products</span>
-            <span class="chip">Full-stack · AI · Security</span>
-            <span class="chip">Available for interviews</span>
-          </div>
+          <p class="hero__lede">
+            A live index of everything I've shipped. Every link below is a real product in production,
+            grouped by what it is. Built to move fast without cutting corners.
+          </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#work">View the work</a>
-            <a class="btn btn--ghost" href="mailto:chandler@syntrix.solutions">Get in touch</a>
+            <a class="btn btn--primary" href="#platforms">Explore the work <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="mailto:chandler@syntrix.solutions">Let's talk</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="stat__num">9</span><span class="stat__label">live products</span></div>
+            <div class="stat"><span class="stat__num">3</span><span class="stat__label">domains</span></div>
+            <div class="stat"><span class="stat__num">∞</span><span class="stat__label">shipping</span></div>
+          </div>
+        </div>
+
+        <div class="hero__right reveal">
+          <div class="portrait">
+            <div class="portrait__frame">
+              <img src="assets/chandler.png" alt="Portrait of Chandler Hill" />
+            </div>
+            <div class="portrait__hud portrait__hud--tl">FULL-STACK</div>
+            <div class="portrait__hud portrait__hud--br">AI · SECURITY</div>
+            <span class="portrait__scan" aria-hidden="true"></span>
           </div>
         </div>
       </div>
     </header>
 
-    <div id="work" class="sections">
+    <div class="sections">
 
-      <!-- OMNISTRATA -->
-      <section class="section reveal">
+      <!-- PLATFORMS -->
+      <section id="platforms" class="section reveal">
         <div class="section__head">
           <span class="section__index">01</span>
-          <div>
-            <h2 class="section__title">Omnistrata Platforms</h2>
-            <p class="section__sub">Flagship AI &amp; security ventures — the core of what I build.</p>
-          </div>
+          <h2 class="section__title">Omnistrata Platforms</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+          <p class="section__sub">Flagship AI &amp; security ventures</p>
         </div>
         <div class="cards">
-          <a class="card" href="https://cover-iq.com" target="_blank" rel="noopener">
+          <a class="card card--featured" href="https://cover-iq.com" target="_blank" rel="noopener">
             <div class="card__top">
               <span class="card__tag">Insurtech · AI</span>
               <span class="card__go" aria-hidden="true">↗</span>
             </div>
             <h3 class="card__title">CoverIQ</h3>
-            <p class="card__desc">AI-powered insurance platform — quoting, agent tooling, and automation for modern coverage.</p>
+            <p class="card__desc">An AI-powered insurance platform — intelligent quoting, agent tooling, and automation for modern coverage. My flagship venture.</p>
             <span class="card__url">cover-iq.com</span>
           </a>
 
@@ -72,7 +102,7 @@
               <span class="card__go" aria-hidden="true">↗</span>
             </div>
             <h3 class="card__title">AgentIQ Exchange</h3>
-            <p class="card__desc">The authenticated agent portal for CoverIQ — accounts, billing, and the agent marketplace.</p>
+            <p class="card__desc">The authenticated B2B portal for CoverIQ — accounts, billing, and the licensed-agent marketplace.</p>
             <span class="card__url">agents.cover-iq.com</span>
           </a>
 
@@ -99,23 +129,22 @@
       </section>
 
       <!-- GAMES -->
-      <section class="section reveal">
+      <section id="games" class="section reveal">
         <div class="section__head">
           <span class="section__index">02</span>
-          <div>
-            <h2 class="section__title">Games &amp; Interactive</h2>
-            <p class="section__sub">Playable, in-browser builds — physics, pixels, and gamified learning.</p>
-          </div>
+          <h2 class="section__title">Games &amp; Interactive</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+          <p class="section__sub">Playable in-browser builds</p>
         </div>
         <div class="cards">
-          <a class="card" href="https://channndo.github.io/Car-Planet/" target="_blank" rel="noopener">
+          <a class="card card--featured" href="https://channndo.github.io/Car-Planet/" target="_blank" rel="noopener">
             <div class="card__top">
               <span class="card__tag">Arcade · Flagship</span>
               <span class="card__go" aria-hidden="true">↗</span>
             </div>
             <h3 class="card__title">Car Planet</h3>
-            <p class="card__desc">The flagship arcade driving game — pixel-art worlds, momentum physics, and endless runs.</p>
-            <span class="card__url">Play in browser</span>
+            <p class="card__desc">The flagship arcade driving game — pixel-art worlds, momentum physics, and endless high-score runs. Playable right in the browser.</p>
+            <span class="card__url">Play now</span>
           </a>
 
           <a class="card" href="https://channndo.github.io/Auto-World/" target="_blank" rel="noopener">
@@ -125,7 +154,7 @@
             </div>
             <h3 class="card__title">Auto World</h3>
             <p class="card__desc">An open driving sandbox — explore, drift, and chase high scores across a living map.</p>
-            <span class="card__url">Play in browser</span>
+            <span class="card__url">Play now</span>
           </a>
 
           <a class="card" href="https://forgedlearn.com" target="_blank" rel="noopener">
@@ -141,40 +170,49 @@
       </section>
 
       <!-- SITES -->
-      <section class="section reveal">
+      <section id="sites" class="section reveal">
         <div class="section__head">
           <span class="section__index">03</span>
-          <div>
-            <h2 class="section__title">Sites &amp; Insurance</h2>
-            <p class="section__sub">Production client work — fast, secure, and conversion-focused.</p>
-          </div>
+          <h2 class="section__title">Sites &amp; Insurance</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+          <p class="section__sub">Production client work</p>
         </div>
         <div class="cards">
-          <a class="card" href="https://chandlerhillagency.com" target="_blank" rel="noopener">
+          <a class="card card--featured" href="https://chandlerhillagency.com" target="_blank" rel="noopener">
             <div class="card__top">
               <span class="card__tag">Insurance · Marketing</span>
               <span class="card__go" aria-hidden="true">↗</span>
             </div>
             <h3 class="card__title">Chandler Hill Agency</h3>
-            <p class="card__desc">A full insurance agency site — products, quote flows, and locations, hardened with edge security.</p>
+            <p class="card__desc">A full insurance agency site — products, quote flows, and locations, hardened with edge security and rate limiting.</p>
             <span class="card__url">chandlerhillagency.com</span>
+          </a>
+
+          <a class="card" href="https://channndo.github.io/alonsocontrerasagency/" target="_blank" rel="noopener">
+            <div class="card__top">
+              <span class="card__tag">Insurance · Funnel</span>
+              <span class="card__go" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="card__title">Alonso Contreras Agency</h3>
+            <p class="card__desc">A conversion-focused web funnel for an insurance agency — clean, fast, and built to capture leads.</p>
+            <span class="card__url">Visit site</span>
           </a>
         </div>
       </section>
 
     </div>
 
-    <!-- FOOTER -->
+    <!-- FOOTER CTA -->
     <footer class="footer reveal">
-      <div class="footer__inner">
-        <p class="footer__name">Chandler Hill</p>
-        <p class="footer__tag">Founder · Omnistrata — Let's build something.</p>
+      <div class="footer__cta">
+        <h2 class="footer__headline">Let's build something.</h2>
+        <p class="footer__tag">Open to full-time roles, contracts, and interesting problems.</p>
         <div class="footer__links">
-          <a href="mailto:chandler@syntrix.solutions">chandler@syntrix.solutions</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://github.com/Channndo" target="_blank" rel="noopener">github.com/Channndo</a>
+          <a class="btn btn--primary" href="mailto:chandler@syntrix.solutions">chandler@syntrix.solutions</a>
+          <a class="btn btn--ghost" href="https://github.com/Channndo" target="_blank" rel="noopener">github.com/Channndo</a>
         </div>
       </div>
+      <p class="footer__base">© <span id="year"></span> Chandler Hill · Omnistrata</p>
     </footer>
   </main>
 
