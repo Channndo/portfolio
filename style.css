@@ -64,12 +64,12 @@ body {
 .bg-glow--1 {
   width: 640px; height: 640px; top: -280px; left: -180px;
   background: radial-gradient(circle, rgba(87, 214, 255, 0.55), transparent 70%);
-  animation: float1 20s var(--ease) infinite alternate;
+  animation: float1 70s var(--ease) infinite alternate;
 }
 .bg-glow--2 {
   width: 580px; height: 580px; top: 90px; right: -240px;
   background: radial-gradient(circle, rgba(157, 123, 255, 0.5), transparent 70%);
-  animation: float2 24s var(--ease) infinite alternate;
+  animation: float2 85s var(--ease) infinite alternate;
 }
 @keyframes float1 { to { transform: translate(90px, 130px) scale(1.12); } }
 @keyframes float2 { to { transform: translate(-80px, 100px) scale(1.06); } }
